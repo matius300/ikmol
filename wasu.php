@@ -16,7 +16,7 @@ $url = "http://api.scraperapi.com?api_key=".$apikey."&url=http://kinaumubanu.spa
 $url1 = "http://api.scraperapi.com?api_key=".$apikey."&url=http://kinaumubanu.space/cuwik";
 $inn = curl($url,$ua,"get");
 $data = "todo=post";
-$end = curl($url1,$ua,"post",$data);
+$end = curl($ua,"post",$data);
 $one = explode('<b>',$end);
 $ip = explode('</b>',$one[3])[0];
 

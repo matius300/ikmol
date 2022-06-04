@@ -21,7 +21,7 @@ $one = explode('<b>',$end);
 $ip = explode('</b>',$one[3])[0];
 
 $cek = strpos($end);
-if($cek){
+if($end){
 echo "[$ip]berhasil visit...\n";
 }
 }

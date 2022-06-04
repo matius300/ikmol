@@ -15,12 +15,12 @@ $ua = array("User-Agent: $head");
 $url = "http://api.scraperapi.com?api_key=".$apikey."&url=http://kinaumubanu.space/cuwik";
 $url1 = "http://api.scraperapi.com?api_key=".$apikey."&url=http://kinaumubanu.space/as2.php";
 $inn = curl($url,$ua,"get");
-$data = "todo=post";
+$data = "post";
 $end = curl($url1,$ua,"post",$data);
 $one = explode('<b>',$end);
 $ip = explode('</b>',$one[3])[0];
 
-$cek = strpos("$end");
+$cek = strpos($end);
 if($cek){
 echo "[$ip]berhasil visit...\n";
 }

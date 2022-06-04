@@ -20,7 +20,7 @@ $end = curl($url1,$ua,"post",$data);
 $one = explode('<b>',$end);
 $ip = explode('</b>',$one[3])[0];
 
-$cek = strpos($end);
+$cek = strpos($end, "We have successfully sent a commission");
 if($cek){
 echo "[$ip]berhasil visit...\n";
 }

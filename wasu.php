@@ -21,7 +21,7 @@ $one = explode('<b>',$end);
 $ip = explode('</b>',$one[3])[0];
 
 $cek = strpos($end,"We have successfully sent a commission");
-if($end){
+if($cek){
 echo "[$ip]berhasil visit...\n";
 }
 }

@@ -13,9 +13,10 @@ $jancok = file("ua")[rand(0,1037)];
 $head = str_replace("\n","",$jancok);
 $ua = array("User-Agent: $head");
 $url = "http://api.scraperapi.com?api_key=".$apikey."&url=http://kinaumubanu.space/cuwik";
+$url1 = "http://api.scraperapi.com?api_key=".$apikey."&url=http://kinaumubanu.space/cuwik";
 $inn = curl($url,$ua,"get");
 $data = "todo=post";
-$end = curl($ua,"post",$data);
+$end = curl($url1,$ua,"post",$data);
 $one = explode('<b>',$end);
 $ip = explode('</b>',$one[3])[0];
 

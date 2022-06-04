@@ -20,8 +20,8 @@ $end = curl($url1,$ua,"post",$data);
 $one = explode('<b>',$end);
 $ip = explode('</b>',$one[3])[0];
 
-$cek = strpos($end);
-if($end){
+$cek = strpos("$end");
+if($cek){
 echo "[$ip]berhasil visit...\n";
 }
 }
